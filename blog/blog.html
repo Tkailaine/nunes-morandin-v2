@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 15px 0 10px;
+        }
+
+        .blog-summary {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: #1B3332;
+            font-weight: bold;
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #1B3332;
+            font-weight: bold;
+        }
+
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+
+        .news-page {
+            display: none;
+        }
+
+        .news-page h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .news-page p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .btn-inicio{
+            display: block;
+            border: none;
+            width: 120px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+            background-color: #1B3332;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+
+        .btn-inicio:hover{
+            background-color: #2C6E6B;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notícias</h1>
+        <!-- Grid de notícias -->
+        <div id="news-container" class="blog-grid">
+            
+            <div class="blog-card" data-title="STJ Adota Sessões Virtuais Assíncronas com Sustentações Orais Gravadas"
+            data-content="
+        
+            <p> O Superior Tribunal de Justiça (STJ) aprovou a resolução 3/25, que regulamenta a realização de julgamentos virtuais em formato assíncrono, com objetivo de acelerar o andamento dos processos. A nova modalidade permitirá que os ministros votem eletronicamente, enquanto advogados poderão encaminhar sustentações orais gravadas até 48 horas antes do início da sessão.</p>
+
+            <p>A medida, que entra em vigor imediatamente e deverá ser implementada até 17 de fevereiro, segue as diretrizes do Conselho Nacional de Justiça (CNJ). No entanto, algumas classes processuais, como ações penais e queixas-crime, permanecerão restritas a sessões presenciais.</p>
+            
+            <p>As sessões virtuais serão públicas e acessíveis em tempo real pelo site do STJ, salvo nos casos de sigilo. Os ministros terão sete dias corridos para registrar seus votos, e o tribunal garantirá transparência ao publicar ementas, relatórios e votos no início das sessões.</p>
+            
+            <p>A OAB, por outro lado, protocolou petições no CNJ para impedir a sustentação oral gravada, argumentando que a presença no momento do julgamento é essencial para a advocacia.</p>
+           ">
+           <img src="../imagens/tribunal.jpg" alt="Imagem da notícia">
+           <h2 class="blog-title">STJ Adota Sessões Virtuais Assíncronas com Sustentações Orais Gravadas</h2>
+           <p class="blog-summary">O STJ regulamentou sessões virtuais assíncronas para agilizar julgamentos eletrônicos, permitindo sustentações orais gravadas. A OAB busca reverter a mudança, alegando prejuízo à advocacia.</p>
+           <p class="blog-meta">Fonte: Migalhas - Data: 23/01/2025</p>
+           <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+       </div>
+       
+           
+            <div class="blog-card" data-title="TJ/SP Rejeita Pedido de Anulação de Sentença Alegadamente Escrita por IA" 
+                 data-content="
+
+              <p>  No Tribunal de Justiça de São Paulo (TJ/SP), uma parte recorreu solicitando a anulação de uma sentença de execução, alegando que o texto teria sido escrito por inteligência artificial. Para sustentar o pedido, apresentou uma consulta feita ao ChatGPT, na qual a ferramenta afirmou haver probabilidade média a grande de a sentença ter sido produzida total ou parcialmente por IA, baseando-se em sua linguagem técnica e estrutura formal.</p>
+
+              <p> No entanto, ao analisar o caso, o desembargador Carlos Ortiz Gomes, da 15ª câmara de Direito Privado do TJ/SP, considerou o pedido absurdo e sem fundamento. O magistrado destacou que a própria análise do ChatGPT admite não ser possível confirmar a autoria do texto sem ferramentas específicas ou consulta à fonte original.</p>
+
+              <p> O desembargador também pontuou que a acusação de uso antiético de IA na prolação de sentenças exige indícios concretos, como jurisprudências inexistentes ou erros graves no julgamento, o que não foi apresentado. Além disso, criticou a falta de conexão entre o recurso e os fundamentos da decisão questionada, afirmando que houve violação ao princípio da dialeticidade.</p>
+
+            <p>Com isso, o tribunal negou o recurso, considerou os embargos incabíveis e majorou os honorários advocatícios para 15% do valor da causa.</p>">
+                <img src="../imagens/ia.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">TJ/SP Rejeita Pedido de Anulação de Sentença Alegadamente Escrita por IA</h2>
+                <p class="blog-summary">Parte pediu a anulação de uma sentença alegando que foi escrita por IA, baseada em consulta ao ChatGPT. TJ/SP rejeitou o pedido por falta de provas e considerou a alegação absurda.</p>
+                <p class="blog-meta">Fonte: Migalhas - Data: 23/01/2025</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+
+            <div class="blog-card" data-title="Planejamento e Proteção: Como Garantir o Legado Musical de Artistas Após a Morte" 
+            data-content="
+
+            <p> A preservação dos direitos autorais e sucessórios é crucial para assegurar que o legado de artistas falecidos seja respeitado e valorizado. Embora a legislação, como a lei 9.610/98, ofereça mecanismos para proteção, disputas judiciais frequentemente surgem, evidenciando a importância do planejamento sucessório.</p>
+
+            <p> Casos recentes reforçam a relevância do tema. Em 2024, o STJ condenou a marca Reserva por usar letras de músicas de Tim Maia sem autorização, enquanto uma decisão anterior manteve contratos assinados por Noel Rosa. Agora, a discussão se estende ao lançamento de uma música inédita, um dueto entre Marília Mendonça e Cristiano Araújo, ambos falecidos.</p>
+            
+            <p> Especialistas destacam a necessidade de medidas preventivas, como testamentos e contratos claros, para evitar conflitos. Os direitos autorais, que possuem natureza moral e patrimonial, garantem a integridade da obra e permitem sua exploração econômica por herdeiros por até 70 anos após o falecimento, segundo a Convenção de Berna.</p>
+        
+            <p> A proteção da herança musical é fundamental para perpetuar a memória cultural e assegurar que a arte continue a inspirar futuras gerações, sem comprometer os valores e direitos dos criadores.</p>">
+                <img src="../imagens/autor.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">Planejamento e Proteção: Como Garantir o Legado Musical de Artistas Após a Morte</h2>
+                <p class="blog-summary">O planejamento sucessório e a proteção dos direitos autorais são essenciais para garantir a integridade e o respeito ao legado musical dos artistas após sua morte.</p>
+                <p class="blog-meta">Fonte: Migalhas - Data: 23/01/2025</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+
+
+            <div class="blog-card" data-title="TJ/SC Decide Que Estado Não Deve Indenizar Mãe de Preso Morto em Cela Isolada" 
+            data-content="
+
+            <p> A 5ª Câmara de Direito Público do TJ/SC determinou que o Estado de Santa Catarina não é responsável pela morte de um preso provisório, ocorrida em 2021, em uma unidade prisional no meio-oeste do Estado. A mãe do detento havia pedido indenização por danos morais e materiais, alegando omissão no monitoramento do seu filho, mas o pleito foi rejeitado nas duas instâncias.</p>
+
+            <p>O caso envolveu um suicídio de um preso que estava em uma cela isolada, uma medida adotada por causa da pandemia de Covid-19. Segundo os registros, o detento não apresentava sinais de problemas psicológicos ou tendências suicidas. Relatos dos agentes penitenciários confirmaram que as verificações no preso eram feitas conforme os protocolos.</p>
+
+            <p>O desembargador relator destacou que, para que o Estado seja responsabilizado por omissão, deve ser comprovada a ausência de ação específica, o nexo de causalidade e a culpa administrativa. No caso, não foi demonstrado que a morte do preso foi causada por falha estatal, uma vez que não havia indícios de que a morte poderia ser evitada com maior cuidado. Além disso, a morte poderia ocorrer fora do ambiente prisional, rompendo o vínculo entre omissão e o resultado fatal.</p>">
+                <img src="../imagens/preso.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">TJ/SC Decide Que Estado Não Deve Indenizar Mãe de Preso Morto em Cela Isolada</h2>
+                <p class="blog-summary">O TJ/SC decidiu que o Estado não deve indenizar a mãe de um preso morto em 2021, alegando que não houve omissão no cuidado do detento. A morte foi classificada como suicídio, sem indícios prévios de comportamento suicida.</p>
+                <p class="blog-meta">Fonte: Migalhas - Data: 23/01/2025</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+            <!-- Continue adicionando as outras notícias aqui seguindo o mesmo padrão -->
+        </div>
+    </div>
+
+    <!-- Página de notícia completa -->
+    <!-- Página de notícia completa -->
+<div class="news-page" id="news-page">
+    <div class="container">
+        <a href="#" id="back-to-home">← Voltar</a>
+        <h1 id="news-title"></h1>
+        <p id="news-content"></p>
+    </div>
+</div>
+
+<a href="../index.html" target="_self" style="text-decoration: none;"><button type="button" class="btn-inicio">Inicio</button></a>
+
+<script>
+    function openNews(element) {
+        const card = element.closest('.blog-card');
+        const title = card.getAttribute('data-title');
+        const content = card.getAttribute('data-content');
+
+        // Esconde a página inicial e mostra a notícia completa
+        document.querySelector('.container').style.display = 'none';
+        document.querySelector('.news-page').style.display = 'block';
+
+        // Define o conteúdo da notícia com HTML
+        document.getElementById('news-title').textContent = title;
+        document.getElementById('news-content').innerHTML = content;
+    }
+
+    document.getElementById('back-to-home').onclick = function() {
+        // Mostra a página inicial
+        document.querySelector('.container').style.display = 'block';
+        // Esconde a página da notícia
+        document.querySelector('.news-page').style.display = 'none';
+    };
+</script>
+
+</body>
+</html>

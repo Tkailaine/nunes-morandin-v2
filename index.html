@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes & Morandin</title>
+    <link rel="stylesheet" href="estilos/styles.css" media="all">
+    <link rel="stylesheet" href="estilos/telasmuitopequenas.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width:768px) and (max-width:991px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width:992px) and (max-width:1199px)">
+    <link rel="stylesheet" href="estilos/tv.css" media="screen and (min-width:1200px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#home">
+        <div class="logo"><img src="imagens/logo.png" alt=""></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
+          <li><a href="pages/exterior.html">Brasileiros nos EUA</a></li>
+          <li style="display: none;"><a href="#escritorio">Escritório</a></li>
+          <li><a href="#cv-advogado">Sobre</a></li>
+          <li><a href="blog/blog.html">Blog</a></li>
+         
+        </ul>
+        <button class="close-btn" id="closeMenu">&times;</button>
+      </nav>
+      <a href="https://wa.link/1bpnz4" target="_blank"><button class="btn-whatsapp">Nos contate</button></a>
+    </div>
+  </header>
+  <main>
+
+    <div class="social-buttons">
+      <!-- Instagram Button -->
+      <a href="#" target="_blank" class="social-button instagram-button" style="display: none;" aria-label="Follow us on Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.link/1bpnz4" style="display: none;" target="_blank" class="social-button whatsapp-button" aria-label="Contact us on WhatsApp">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+      </a>
+  </div>
+
+  <section class="bandeira" id="home">
+    <div class="ft-bandeira">
+        <h1>
+          Mais de 15 anos de dedicação e compromisso com a justiça
+        </h1>
+    </div>
+    <div class="slider-noticias">
+        <div class="news-slider">
+            <a href="blog/blog.html" target="_self" style="color: rgb(63, 63, 63);">
+              <div class="slider-container">
+                <div class="slider-item">
+                  <h3 class="news-title">STJ Adota Sessões Virtuais Assíncronas com Sustentações Orais Gravadas</h3>
+                  <p class="news-date">23 de Janeiro de 2025</p>
+                  <p class="news-author">Por Migalhas</p>
+                  <p class="news-summary">O STJ regulamentou sessões virtuais assíncronas para agilizar julgamentos eletrônicos, permitindo sustentações orais gravadas. A OAB busca reverter a mudança, alegando prejuízo à advocacia.</p>
+                </div>
+
+                <div class="slider-item">
+                  <h3 class="news-title">TJ/SP Rejeita Pedido de Anulação de Sentença Alegadamente Escrita por IA
+                  </h3>
+                  <p class="news-date">23 de Janeiro de 2025</p>
+                  <p class="news-author">Por Migalhas</p>
+                  <p class="news-summary">Parte pediu a anulação de uma sentença alegando que foi escrita por IA, baseada em consulta ao ChatGPT. TJ/SP rejeitou o pedido por falta de provas e considerou a alegação absurda.</p>
+                </div>
+
+                <div class="slider-item">
+                  <h3 class="news-title">Planejamento e Proteção: Como Garantir o Legado Musical de Artistas Após a Morte</h3>
+                  <p class="news-date">23 de Janeiro de 2025</p>
+                  <p class="news-author">Por Migalhas</p>
+                  <p class="news-summary">O planejamento sucessório e a proteção dos direitos autorais são essenciais para garantir a integridade e o respeito ao legado musical dos artistas após sua morte.</p>
+                </div>
+                <div class="slider-item">
+                  <h3 class="news-title">
+                    TJ/SC Decide Que Estado Não Deve Indenizar Mãe de Preso Morto em Cela Isolada</h3>
+                  <p class="news-date">23 de Janeiro de 2025</p>
+                  <p class="news-author">Por Migalhas</p>
+                  <p class="news-summary">O TJ/SC decidiu que o Estado não deve indenizar a mãe de um preso morto em 2021, alegando que não houve omissão no cuidado do detento. A morte foi classificada como suicídio, sem indícios prévios de comportamento suicida.</p>
+                </div>
+              </div></a>
+              <!-- Indicadores (pontos) -->
+              <div class="dots-container">
+                <span class="dot" onclick="moveSlideTo(0)"></span>
+                <span class="dot" onclick="moveSlideTo(1)"></span>
+                <span class="dot" onclick="moveSlideTo(2)"></span>
+                <span class="dot" onclick="moveSlideTo(3)"></span>
+              </div>
+              </div>
+            
+    </div>
+</section>
+
+
+    <section class="atuacao">
+        <div class="areas">
+          <h1>Empatia e estratégia: nossa fórmula para resolver seus problemas</h1>
+        </div>
+
+
+        <div class="area-principal">
+          <div class="imagem-destaque">
+            <div class="ft-atuacao"></div>
+          </div> 
+        
+          <div class="txt-atuacao">
+            <h2 class="titulo-direito surge-right">Direito Civil e Direito de Família e Sucessões</h2>
+            <div class="txt-inventario">
+              
+              <p class=" previa surge-left">
+                O Direito Civil é um dos ramos mais amplos do Direito, pois regula as relações entre as pessoas no dia a dia. Dentro dessa área, o Direito de Família e Sucessões é especialmente relevante para situações que envolvem relações familiares e a organização do patrimônio entre gerações.</p>
+            </div>
+            <ul>
+              <h1 class="surge-right">Direito de Família</h1>
+              <li class="surge-left"><strong>Divórcios e Separações:</strong> Assessoria para condução de processos de retirada, sempre priorizando o diálogo para evitar conflitos desnecessários.</li>
+              <li class="surge-right"><strong>Guarda de Filhos e Pensão Alimentar:</strong> Auxílio para regular a guarda das crianças, visitas e pensões, garantindo os direitos de todas as partes envolvidas.</li>
+              <li class="surge-left"><strong>Uniões Estáveis:</strong> Formalização de uniões resultantes e dissoluções, com foco na divisão de bens e outros direitos relacionados.
+              </li>
+              <li class="surge-right"><strong>Adoção:</strong> Orientação jurídica para que o processo de adoção seja seguro e dentro da legalidade, sempre respeitando o melhor interesse da criança.</li>
+            </ul>
+
+            <ul>
+              <h1 class="surge-left">Direito das Sucessões</h1>
+              <li class="surge-right"><strong>Testamentos e Planejamento Sucessório:</strong> Ajuda na organização do patrimônio para evitar conflitos familiares no futuro.</li>
+              <li class="surge-left"><strong>Inventários e Partilhas: </strong>Representação em processos de inventário para garantir que os bens sejam divididos de forma justa e respeitando a legislação.</li>
+            </ul>
+
+            <a href="https://wa.link/1bpnz4" target="_blank"><button type="button" class="btn-contato">Fale com um especialista </button></a>
+
+            
+          </div>
+        </div>
+
+        
+
+
+        <div class="area-secundaria ">
+          <div class="imagem-destaque">
+            <div class="ft-secundaria"></div>
+          </div> 
+        
+          <div class="txt-atuacao">
+            <h2 class="titulo-direito surge-right">Direito Previdenciário e Trabalhista</h2>
+            <div class="txt-inventario">
+              
+              <p class=" previa surge-left">
+                O Direito Previdenciário e Trabalhista zela pelos direitos do trabalhador, tanto no emprego quanto na hora de buscar benefícios sociais. São áreas fundamentais para garantir a segurança financeira e a justiça em situações desafiadoras.</p>
+            </div>
+            <ul>
+              <h1 class="surge-right">Direito Previdenciário</h1>
+              <li class="surge-left"><strong>Aposentadorias:</strong> Orientação completa para quem deseja se aposentar, incluindo atrasos por tempo de contribuição, idade, invalidez ou especial.</li>
+              <li class="surge-right"><strong>Revisão de Benefícios:</strong> Análise de benefícios previdenciários que foram concedidos de forma incorreta, garantindo que o cliente receba o valor justo.</li>
+              <li class="surge-left"><strong>Auxílio-doença e Pensão por Morte:</strong> Suporte em processos para garantir direitos em momentos de vulnerabilidade, como doenças ou falecimento de um ente querido.
+              </li>
+              <li class="surge-right"><strong>Planejamento Previdenciário:</strong> Ajuda para entender quando e como se aposentar, maximizando os benefícios disponíveis.</li>
+            </ul>
+
+            <ul>
+              <h1 class="surge-left">Direito Trabalhista</h1>
+              <li class="surge-right"><strong>Rescisões Contratuais:</strong> Assessoria para revisar verbas rescisórias e garantir que tudo o que o trabalhador tem direito seja pago corretamente.</li>
+              <li class="surge-left"><strong>Ações Trabalhistas:</strong> Defesa em casos de direitos trabalhistas não cumpridos, como horas extras, adicionais de insalubridade ou periculosidade, e equiparação salarial.</li>
+              <li class="surge-right"><strong>Assédio e Discriminação:</strong> Representação em casos de condutas abusivas no ambiente de trabalho.
+                </li>
+              <li class="surge-left"><strong>Consultoria Preventiva: </strong> Orientação para evitar problemas no futuro, como contratos bem modificados e cumprimento das leis trabalhistas.</li>
+            </ul>
+
+            <a href="https://wa.link/1bpnz4" target="_blank"><button type="button" class="btn-contato">Fale com um especialista</button></a>
+
+            
+          </div>
+        </div>
+
+
+        <div class="outras-areas" id="areas-atuacao">
+          <h1 class="surge-bottom">ÁREAS DE ATUAÇÃO</h1>
+          <section class="areas-atuacao" >
+            
+            <div class="area-card surge-left" id="area1">
+              <h3>Direito Civil</h3>
+              <p class="mini-resumo">
+                Resolução de conflitos e proteção de direitos nas relações pessoais e patrimoniais.
+                </p>
+              <button class="btn-expand" onclick="toggleArea('area1')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Atua em questões jurídicas do dia a dia, como contratos, indenizações e disputas patrimoniais, sempre focando em soluções justas e eficazes.</p>
+                <button class="btn-collapse" onclick="toggleArea('area1')">Exibir Menos</button>
+              </div>
+            </div>
+
+
+            <div class="area-card surge-right" id="area2">
+              <h3>Direito Eleitoral</h3>
+              <p class="mini-resumo">
+                Consultoria sobre campanhas eleitorais e direitos políticos.
+              </p>
+              <button class="btn-expand" onclick="toggleArea('area2')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Presta apoio em temas eleitorais, como elegibilidade e campanhas, garantindo conformidade com a legislação e segurança jurídica.</p>
+                <button class="btn-collapse" onclick="toggleArea('area2')">Exibir Menos</button>
+              </div>
+            </div>
+          
+            <div class="area-card surge-left" id="area3">
+              <h3>Direito de Família</h3>
+              <p class="mini-resumo"> Soluções para benefícios, guarda, pensões e outras questões familiares.</p>
+              <button class="btn-expand" onclick="toggleArea('area3')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Auxilia em processos de separação, adoção, união estável e outros conflitos familiares, buscando preservar os direitos e a harmonia entre as partes.</p>
+                <button class="btn-collapse" onclick="toggleArea('area3')">Exibir Menos</button>
+              </div>
+            </div>
+            
+            <div class="area-card surge-left" id="area5">
+              <h3>Direito de Sucessões</h3>
+              <p class="mini-resumo">Organização de heranças e divisão de bens de forma legal e justa.</p>
+              <button class="btn-expand" onclick="toggleArea('area5')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Oferece suporte na elaboração de testamentos, planejamento sucessório e inventários, garantindo uma transição patrimonial tranquila e sem conflitos.</p>
+                <button class="btn-collapse" onclick="toggleArea('area5')">Exibir Menos</button>
+              </div>
+            </div>
+
+            <div class="area-card surge-right" id="area4">
+              <h3>Direito Previdenciário</h3>
+              <p class="mini-resumo"> Orientação para aposentadorias e benefícios do INSS.</p>
+              <button class="btn-expand" onclick="toggleArea('area4')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Auxilia em reformas, revisões de benefícios e outros direitos previdenciários, garantindo segurança financeira em todas as fases da vida.</p>
+                <button class="btn-collapse" onclick="toggleArea('area4')">Exibir Menos</button>
+              </div>
+            </div>
+
+
+            <div class="area-card surge-right" id="area6">
+              <h3>Direito do Trabalho</h3>
+              <p class="mini-resumo"> Defesa dos direitos dos trabalhadores em questões trabalhistas.</p>
+              <button class="btn-expand" onclick="toggleArea('area6')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Atua em casos de demissões, assédio, verbas rescisórias e condições de trabalho, garantindo que os direitos trabalhistas sejam respeitados.</p>
+                <button class="btn-collapse" onclick="toggleArea('area6')">Exibir Menos</button>
+              </div>
+            </div>
+          </section>
+
+          <a href="https://wa.link/1bpnz4" target="_blank"><button class="btn-chamada surge-bottom">Fale com um especialista →</button></a>
+    </section>
+
+   
+
+   
+    <section class="cv-advogado" id="cv-advogado">
+      <div class="profiles">
+        <!-- Dr. Reinaldo Nunes -->
+        <div class="profile-card surge-left" id="reinaldo-card">
+          <h2>Dr. Reinaldo Nunes</h2>
+          <p><strong>Especialista em Direito Civil e Direito de Família e Sucessões</strong></p>
+          <div class="resumo-cv">
+            <p>Advogado altamente qualificado, com sólida formação e dedicação contínua ao aprimoramento profissional. Graduado pela Universidade Padre Anchieta, possui pós-graduações em Direito Eleitoral, Direito Civil e Processo Civil, e Direito de Família e Sucessões, refletindo sua ampla expertise nas áreas em que atua.</p>
+
+<p>Sua capacitação é complementada por cursos de extensão em áreas como Direito Previdenciário, Direito do Trabalho e Processo do Trabalho, e Direito Constitucional, além de uma formação política pela Fundação Ulysses Guimarães, que aprofunda sua compreensão das implicações jurídicas no cenário público e governamental.</p>
+
+<p>Reconhecido por sua abordagem empática e estratégica,o profissional busca sempre soluções eficazes e personalizadas para atender às necessidades de seus clientes, reafirmando seu compromisso com a excelência e a justiça.</p>
+          </div>
+          <button class="toggle-btn" onclick="toggleProfileDetails('reinaldo')">🔍 Ver mais</button>
+          <div class="profile-details" id="reinaldo-details">
+            <div class="info-section">
+              <h3>Formação Acadêmica</h3>
+              <ul>
+                <li>Graduação: Universidade Padre Anchieta</li>
+                <li>Pós-graduação em Direito Eleitoral (FITEC)</li>
+                <li>Pós-graduação em Direito Civil e Processo Civil (Faculdade Legale)</li>
+                <li>Pós-graduação em Direito de Família e Sucessões (Faculdade Legale)</li>
+              </ul>
+            </div>
+            <div class="info-section">
+              <h3>Áreas de Atuação</h3>
+              <ul>
+                <li>Direito Civil</li>
+                <li>Direito de Família</li>
+                <li>Direito das Sucessões</li>
+                <li>Direito Eleitoral</li>
+              </ul>
+            </div>
+            <div class="info-section">
+              <h3>Experiência Profissional</h3>
+              <p>Abordagem empática e estratégica para resolução de conflitos, com foco em soluções eficazes e satisfatórias para os clientes.</p>
+            </div>
+            
+          </div>
+        </div>
+    
+        <!-- Dr. Michael Pereira Morandin -->
+        <div class="profile-card surge-right" id="michael-card" style="display: none;">
+          <h2>Dr. Michael Morandin</h2>
+          <p><strong>Especialista em Direito Previdenciário e Trabalhista</strong></p>
+          <div class="resumo-cv"><p>Profissional formado pela Pontifícia Universidade Católica de Campinas (PUC Campinas), com uma base sólida em diversas áreas do Direito. Sua especialização em Direito Previdenciário aprimora sua capacidade de lidar com questões como benefícios, aposentadorias, pensões e direitos dos segurados, fornecendo soluções jurídicas detalhadas e precisas.</p>
+            
+            <p>Com atuação destacada nas áreas Trabalhista e Previdenciária, ele oferece assessoria e representação em processos administrativos e judiciais. Sua expertise abrange desde o acompanhamento de ações trabalhistas até a revisão de benefícios previdenciários, sempre com foco em soluções personalizadas e estratégicas que atendem às necessidades específicas de cada cliente.</p>
+            
+            <p>O advogado se compromete a minimizar riscos e assegurar os direitos dos seus clientes, adotando uma abordagem estratégica e preventiva que reflete sua dedicação à excelência jurídica.</p>
+            
+            </p></div>
+          <button class="toggle-btn" onclick="toggleProfileDetails('michael')">🔍 Ver mais</button>
+          <div class="profile-details" id="michael-details">
+            <div class="info-section">
+              <h3>Formação Acadêmica</h3>
+              <ul>
+                <li>Bacharel em Direito pela Pontifícia Universidade Católica de Campinas (PUC Campinas)</li>
+                <li>Pós-graduação em Direito Previdenciário</li>
+              </ul>
+            </div>
+            <div class="info-section">
+              <h3>Áreas de Atuação</h3>
+              <ul>
+                <li>Direito Previdenciário</li>
+                <li>Direito Trabalhista</li>
+              </ul>
+            </div>
+            <div class="info-section">
+              <h3>Experiência Profissional</h3>
+              <p>Atuação destacada na representação de clientes em processos administrativos e judiciais, com foco na revisão de benefícios previdenciários e ações trabalhistas.</p>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sessao-conquistas">
+      <h2 style="padding-top:20px; margin-bottom: 0px;">Vitórias/Sucessos</h2>
+      <div class="countainer-principal-counter">
+          <div class="counter-container">
+            
+              <div class="counter" data-target="600"></div>
+              <span>Cível</span>
+            </div>
+            <div class="counter-container">
+              
+              <div class="counter" data-target="300"></div>
+              <span>Família</span>
+            </div>
+            <div class="counter-container">
+              <div class="counter" data-target="608"></div>
+              <span>Trabalhista</span>
+            </div>
+      </div>
+  </section>
+  </section>
+
+  <section id="cta-exterior">
+    <div>
+      <h2>Viva nos EUA, Resolva no Brasil. Seu Direito, Sem Distância.
+      </h2>
+      <p>Assistência Jurídica Especializada para Brasileiros nos Estados Unidos.</p>
+      <a href="pages/exterior.html" id="link-exterior">Saiba Mais ⟶</a>
+    </div>
+  </section>
+    
+    
+
+
+    <section class="mini-blog">
+      <div class="blog-container">
+        <h2 style="color: white; margin-bottom: 50px;">Conheça Nosso Blog</h2>
+
+        <!-- Contêiner das notícias -->
+        <div class="noticias-container">
+            <div class="noticia-item surge-left">
+                <h2 class="titulo">STJ Adota Sessões Virtuais Assíncronas com Sustentações Orais Gravadas</h2>
+                <p class="resumo">O STJ regulamentou sessões virtuais assíncronas para agilizar julgamentos eletrônicos, permitindo sustentações orais gravadas. A OAB busca reverter a mudança, alegando prejuízo à advocacia.</p>
+                <p class="data">Data: 23 de Janeiro de 2025</p>
+                <p class="fonte">Fonte: Migalhas</p>
+                <a href="blog/blog.html" target="_self"><button class="btn">Saber Mais</button></a>
+            </div>
+
+            <div class="noticia-item surge-bottom">
+                <h2 class="titulo">TJ/SP Rejeita Pedido de Anulação de Sentença Alegadamente Escrita por IA</h2>
+                <p class="resumo">Parte pediu a anulação de uma sentença alegando que foi escrita por IA, baseada em consulta ao ChatGPT. TJ/SP rejeitou o pedido por falta de provas e considerou a alegação absurda.</p>
+                <p class="data">Data: 23 de Janeiro de 2025</p>
+                <p class="fonte">Fonte: Migalhas</p>
+                <a href="blog/blog.html" target="_self"><button class="btn">Saber Mais</button></a>
+            </div>
+
+            <div class="noticia-item surge-right">
+                <h2 class="titulo">Planejamento e Proteção: Como Garantir o Legado Musical de Artistas Após a Morte</h2>
+                <p class="resumo">O planejamento sucessório e a proteção dos direitos autorais são essenciais para garantir a integridade e o respeito ao legado musical dos artistas após sua morte.</p>
+                <p class="data">Data: 23 de Janeiro de 2025</p>
+                <p class="fonte">Fonte: Migalhas</p>
+                <a href="blog/blog.html" target="_self"><button class="btn">Saber Mais</button></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+      
+    
+  </main>
+
+  <footer> 
+    <!--SESSÃO DE INFORMAÇÕES EXTRAS E LINKS DE ACESSO-->
+   <div class="sessao-footer">
+    <div>
+           <div class="info-footer">
+            <img src="imagens/logo2.png" style="width: 300px; margin-bottom:15px;" alt="LogoNunes & Morandin">
+            <p style="margin-top: 10px;"><strong>Endereço:</strong></p>
+            <p> Unidade Jundiaí - SP </p>
+            <p>Rua Rangel Pestana, 779 - Centro - Jundiaí , SP, 13201-000</p>
+            <p> Unidade Sumaré - SP </p>
+            <p>Rua Tupi Guarani, 178 - Jardim Picerno I - Sumaré , SP, 13173-280</p>
+            <p><strong>Contato</strong></p>
+            <p>reinaldonunes@adv.oabsp.org.br</p>
+            <p><a href="https://wa.link/1bpnz4" target="_blank">(11) 97556-2466</a></p>
+           
+            <div>
+                <a href="https://wa.link/1bpnz4" target="_blank"><input type="button" style="background-color: #1B3332; color: white; width: 150px;
+                height: 35px; margin: 20px 0px;" value="Nos contate" class="btn-contato"></a>
+            </div>
+           </div> 
+    </div>
+
+    <div> 
+        <h3>Links Úteis</h3>
+            <ul class="links-uteis">
+                <li><a href="#home" target="_self">Página Inicial</a></li>
+                <li><a href="#areas-atuacao" target="_self">Áreas de Atuação</a></li>
+                <li><a href="pages/exterior.html">Brasileiros nos EUA</a></li>
+                <li style="display: none;"><a href="#escritorio" target="_self">Escritório</a></li> 
+                <li><a href="#cv-advogado" target="_self">Sobre</a></li>
+                <li><a href="blog/blog.html" target="_self">Noticias</a></li>
+                <li> <a href="creditos.txt" download="creditos.txt">Baixar Arquivo com Créditos</a></li>
+            </ul>
+    </div> 
+    <div class="contato-form">
+    <h3>Entre em Contato</h3>
+    <form
+       action="https://formsubmit.co/reinaldonunes@adv.oabsp.org.br"
+       method="POST"
+       class="form"
+       >
+       <label for="name">Nome</label>
+       <input type="text" name="name" id="name" required />
+       <label for="email">E-mail</label>
+       <input type="email" name="email" id="email" required />
+       <label for="message">Mensagem</label>
+       <textarea name="message" id="message" required></textarea>
+       <input type="hidden" name="_captcha" value="false" />
+       <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento/agradecimento.html">
+       
+       <button type="submit">Enviar</button>
+       </form>
+           </div>
+           </div>
+
+   </div>
+
+  
+
+   <span class="divisoria"></span>
+    <div style="text-align: center;">
+        &copy; 2025 Nunes & Morandin. Todos os direitos reservados. Desenvolvido por <a href="https://wa.link/28ukpj" target="_blank" style="color: rgb(149, 7, 161);">PulseCode</a>.
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

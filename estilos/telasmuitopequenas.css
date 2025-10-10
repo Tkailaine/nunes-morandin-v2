@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.logo img{
+    width: 150px;
+}
+
+
+.iarea{
+margin: auto;
+width: 30px;
+height: 30px;
+}
+
+.txt-atuacao{
+  width: 90%;
+}
+
+
+
+.cv-advogado{
+    background-image: url(../imagens/banner-mobile2.jpg);
+    height:1500px;
+    
+  }
+
+  #reinaldo-card{
+    top: 43%;
+   
+  }
+  
+
+  #michael-card{
+    top:74%;
+  }
+  
+
+
+.btn-contato{
+  font-size: 1em;
+  width: 200px;
+
+}
+
+ /*PÁGINA EXTERIOR*/
+
+  #hero-exterior{
+  margin-top: 90px;
+}
+
+#hero-exterior h1{
+  font-size: 1.4em;
+}
+
+
+#hero-exterior #txt-hero{
+  left: 8%;
+  max-width:80%;
+}
+
+  #sessao-reinaldo{
+  flex-direction: column-reverse;
+  gap: 20px;
+  }
+
+  #sessao-reinaldo div{
+    width: 95%;
+  }
+
+  #sessao-reinaldo h2{
+    text-align: center;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    
+  }
+
+  #sessao-reinaldo img{
+    width: 300px;
+  }
+
+
+.servicos-lista {
+      grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+      max-width: 95%;
+    }
+
+.servico-item{
+      flex-direction: column;
+      text-align: center;
+    }
+
+.servicos h3, #sessao-reinaldo h2{
+  font-size: 1.3em;
+}
+
+#container-form{
+        flex-direction: column;
+    }
+    #container-form p{
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    form{
+        width: 100%;}
